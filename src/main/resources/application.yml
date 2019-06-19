@@ -1,2 +1,11 @@
 server:
-  port: 8081
+  port: 8080
+
+spring:
+  druid:
+    url: jdbc:mysql://192.168.1.142/sell?useUnicode=true&characterEncoding=UTF-8
+    driverName: com.mysql..jdbc.Driver
+    username: root
+    password: 123456
+    maxActive: 30
+    maxWait: 5000

@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Test {
 
 
-    //@GetMapping("/hello")
-    @RequestMapping(value = "/hello" , method = RequestMethod.GET)
+    @GetMapping("/hello")
+    //@RequestMapping(value = "/hello" , method = RequestMethod.GET)
 
     public String a(){
 
