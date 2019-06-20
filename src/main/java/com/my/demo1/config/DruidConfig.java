@@ -25,10 +25,9 @@ public class DruidConfig {
     @Bean
     public StatFilter statFilter(){
         StatFilter statFilter=new StatFilter();
-        //慢查询是否记录日志
-        statFilter.setLogSlowSql(true);
-        //慢查询时间
+        //慢查询时间,如果查询时间超过5秒，就是慢查询，会被记录进日志
         statFilter.setSlowSqlMillis(5);
+        //慢查询记录日志
         statFilter.setLogSlowSql(true);
         //格式化sql
         statFilter.setMergeSql(true);
