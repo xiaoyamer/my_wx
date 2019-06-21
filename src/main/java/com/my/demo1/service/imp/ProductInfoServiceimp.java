@@ -37,7 +37,7 @@ public class ProductInfoServiceimp implements ProductInfoService {
                 .collect(Collectors.toList());
         //查询商品列表
         //商品上下架使用枚举方便扩展?
-        List<ProductInfo> productInfoList = productInfoRepository.findByProductStausAndCategoryTypeIn
+        List<ProductInfo> productInfoList = productInfoRepository.findByProductStatusAndAndCategoryTypeIn
                 (ResultEnums.PRODUCT_UP.getCode(), categoryTypeList);
         //目前为止所有正常商品都在productInfoList集合中
         //多线程遍历

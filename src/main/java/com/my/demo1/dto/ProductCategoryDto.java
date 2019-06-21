@@ -11,7 +11,7 @@ import java.util.List;
 @Data
 public class ProductCategoryDto implements Serializable {
     @JsonProperty("name")
-    private String ctaegoryName;
+    private String categoryName;
     @JsonProperty("type")
     private Integer categoryType;
     @JsonProperty("foods")

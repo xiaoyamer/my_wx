@@ -5,13 +5,14 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
 @Data
 @DynamicUpdate
-//@Table(name="product_info") 默认规则：去掉下划线首字母大写可不用指定
+@Table(name="product_info") //默认规则：去掉下划线首字母大写可不用指定
 public class ProductInfo {
     @Id
     private String productId;
@@ -21,8 +22,8 @@ public class ProductInfo {
     private Integer productStock; //库存
     private String productDescription; //描述
     private String productIcon; //小图
-    private Integer productStaus; //商品状态，0：正常，1：下架
+    private Integer productStatus; //商品状态，0：正常，1：下架
     private Integer categoryType;
-    private Date categoryTime;
+    private Date createTime;
     private Date updateTime;
 }

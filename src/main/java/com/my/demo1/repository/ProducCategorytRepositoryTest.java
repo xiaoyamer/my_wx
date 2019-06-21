@@ -41,9 +41,9 @@ public class ProducCategorytRepositoryTest {
 
     @Test //自定义命名规范查询
     public void findByTypeIn(){
-        List<ProductCategory> byCategoryTypeIn = productCategoryRepository
-                .findByCategoryTypeIn(Lists.newArrayList(1, 2, 3));
-        byCategoryTypeIn.stream().forEach(System.out::println);
+        //List<ProductCategory> byCategoryTypeIn = productCategoryRepository
+                //.findByCategoryTypeIn(Lists.newArrayList(1, 2, 3));
+        //byCategoryTypeIn.stream().forEach(System.out::println);
     }
 
 

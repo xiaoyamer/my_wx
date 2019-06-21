@@ -17,7 +17,7 @@ public class ProductInfoController {
     @Autowired
     private ProductInfoService productInfoService;
 
-    @GetMapping("list")
+    @RequestMapping("list")
     //对方法接口进行描述
     @ApiOperation(value = "查询商品信息列表")
     public ResultResponse list(){

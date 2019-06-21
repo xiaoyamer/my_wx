@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ProductInfoRepository extends JpaRepository<ProductInfo,String> {
     //根据类目编号查询正常上架的商品
-    List<ProductInfo> findByProductStausAndCategoryTypeIn(Integer status,
+    List<ProductInfo> findByProductStatusAndAndCategoryTypeIn(Integer status,
                                                           List<Integer> categoryList);
 
 }
